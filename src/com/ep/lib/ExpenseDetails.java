@@ -6,57 +6,14 @@ public class ExpenseDetails {
 		super();
 	}
 
-	public ExpenseDetails(String name, Double amount, String method,
-			String description, String rawInput) {
+	public ExpenseDetails(String description, Double amount) {
 		super();
-		this.name = name;
-		this.amount = amount;
-		this.method = method;
 		this.description = description;
-		this.rawInput = rawInput;
+		this.amount = amount;
 	}
 
-	private String name;
-	private Double amount;
-	private String method;
 	private String description;
-	private String rawInput;
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return name;
-	}
-	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
-	/**
-	 * @return the amount
-	 */
-	public Double getAmount() {
-		return amount;
-	}
-	/**
-	 * @param amount the amount to set
-	 */
-	public void setAmount(Double amount) {
-		this.amount = amount;
-	}
-	/**
-	 * @return the method
-	 */
-	public String getMethod() {
-		return method;
-	}
-	/**
-	 * @param method the method to set
-	 */
-	public void setMethod(String method) {
-		this.method = method;
-	}
+	private Double amount;
 	/**
 	 * @return the description
 	 */
@@ -70,25 +27,25 @@ public class ExpenseDetails {
 		this.description = description;
 	}
 	/**
-	 * @return the rawInput
+	 * @return the amount
 	 */
-	public String getRawInput() {
-		return rawInput;
+	public Double getAmount() {
+		return amount;
 	}
 	/**
-	 * @param rawInput the rawInput to set
+	 * @param amount the amount to set
 	 */
-	public void setRawInput(String rawInput) {
-		this.rawInput = rawInput;
+	public void setAmount(Double amount) {
+		this.amount = amount;
 	}
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "ExpenseDetails [name=" + name + ", amount=" + amount
-				+ ", method=" + method + ", description=" + description
-				+ ", rawInput=" + rawInput + "]";
+		return "ExpenseDetails [description=" + description + ", amount="
+				+ amount + "]";
 	}
-	
+
+
 }
